@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		E4B842FF28FD5ACA002412BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B842FE28FD5ACA002412BD /* AppDelegate.swift */; };
 		E4B8430128FD5ACA002412BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8430028FD5ACA002412BD /* SceneDelegate.swift */; };
-		E4B8430328FD5ACA002412BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8430228FD5ACA002412BD /* ViewController.swift */; };
+		E4B8430328FD5ACA002412BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8430228FD5ACA002412BD /* MainViewController.swift */; };
 		E4B8430628FD5ACA002412BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B8430428FD5ACA002412BD /* Main.storyboard */; };
 		E4B8430828FD5ACD002412BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8430728FD5ACD002412BD /* Assets.xcassets */; };
 		E4B8430B28FD5ACD002412BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B8430928FD5ACD002412BD /* LaunchScreen.storyboard */; };
 		E4B8431628FD5ACD002412BD /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8431528FD5ACD002412BD /* MVVMTests.swift */; };
 		E4B8432028FD5ACD002412BD /* MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8431F28FD5ACD002412BD /* MVVMUITests.swift */; };
 		E4B8432228FD5ACD002412BD /* MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8432128FD5ACD002412BD /* MVVMUITestsLaunchTests.swift */; };
+		E4B8433128FD5DEC002412BD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8433028FD5DEC002412BD /* MainViewModel.swift */; };
+		E4B8433328FD5E15002412BD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8433228FD5E15002412BD /* UserModel.swift */; };
+		E4F6424628FE7DA600E39697 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6424528FE7DA600E39697 /* ObservableObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		E4B842FB28FD5ACA002412BD /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B842FE28FD5ACA002412BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4B8430028FD5ACA002412BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4B8430228FD5ACA002412BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4B8430228FD5ACA002412BD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E4B8430528FD5ACA002412BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4B8430728FD5ACD002412BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B8430A28FD5ACD002412BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		E4B8431B28FD5ACD002412BD /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8431F28FD5ACD002412BD /* MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITests.swift; sourceTree = "<group>"; };
 		E4B8432128FD5ACD002412BD /* MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4B8433028FD5DEC002412BD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E4B8433228FD5E15002412BD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E4F6424528FE7DA600E39697 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		E4B842FD28FD5ACA002412BD /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				E4B8432F28FD5D94002412BD /* MainView */,
+				E4B8432E28FD5D88002412BD /* Model */,
 				E4B842FE28FD5ACA002412BD /* AppDelegate.swift */,
 				E4B8430028FD5ACA002412BD /* SceneDelegate.swift */,
-				E4B8430228FD5ACA002412BD /* ViewController.swift */,
+				E4F6424528FE7DA600E39697 /* ObservableObject.swift */,
 				E4B8430428FD5ACA002412BD /* Main.storyboard */,
 				E4B8430728FD5ACD002412BD /* Assets.xcassets */,
 				E4B8430928FD5ACD002412BD /* LaunchScreen.storyboard */,
@@ -125,6 +133,23 @@
 				E4B8432128FD5ACD002412BD /* MVVMUITestsLaunchTests.swift */,
 			);
 			path = MVVMUITests;
+			sourceTree = "<group>";
+		};
+		E4B8432E28FD5D88002412BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4B8433228FD5E15002412BD /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4B8432F28FD5D94002412BD /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				E4B8430228FD5ACA002412BD /* MainViewController.swift */,
+				E4B8433028FD5DEC002412BD /* MainViewModel.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B8430328FD5ACA002412BD /* ViewController.swift in Sources */,
+				E4B8430328FD5ACA002412BD /* MainViewController.swift in Sources */,
 				E4B842FF28FD5ACA002412BD /* AppDelegate.swift in Sources */,
 				E4B8430128FD5ACA002412BD /* SceneDelegate.swift in Sources */,
+				E4B8433328FD5E15002412BD /* UserModel.swift in Sources */,
+				E4B8433128FD5DEC002412BD /* MainViewModel.swift in Sources */,
+				E4F6424628FE7DA600E39697 /* ObservableObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
